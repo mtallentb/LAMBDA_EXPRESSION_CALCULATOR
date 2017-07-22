@@ -4,6 +4,7 @@ const addButton = document.getElementById("add");
 const subtractButton = document.getElementById("subtract");
 const multiplyButton = document.getElementById("multiply");
 const divideButton = document.getElementById("divide");
+const output = document.getElementById("output");
 
 /*
   Create a function that multiplies two numbers
@@ -11,7 +12,7 @@ const divideButton = document.getElementById("divide");
  */
 
 multiplyButton.addEventListener("click", event => {
-  console.log(firstNum.value * secondNum.value);
+  output.innerHTML = (firstNum.value * secondNum.value);
 });
 
 /*
@@ -20,7 +21,7 @@ multiplyButton.addEventListener("click", event => {
  */
 
 addButton.addEventListener("click", event => {
-  console.log(firstNum.value + secondNum.value);
+  output.innerHTML = (firstNum.value + secondNum.value);
 });
 
 /*
@@ -29,7 +30,7 @@ addButton.addEventListener("click", event => {
  */
 
 subtractButton.addEventListener("click", event => {
-  console.log(firstNum.value - secondNum.value);
+  output.innerHTML = (firstNum.value - secondNum.value);
 });
 
 /*
@@ -38,7 +39,7 @@ subtractButton.addEventListener("click", event => {
  */
 
 divideButton.addEventListener("click", event => {
-  console.log(firstNum.value / secondNum.value);
+  output.innerHTML = (firstNum.value / secondNum.value);
 });
 
 /*
@@ -49,7 +50,7 @@ divideButton.addEventListener("click", event => {
 
   Return the value of the operation.
  */
- 
+
  function add(num1, num2) {
   return num1 + num2;
  }
